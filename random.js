@@ -1,4 +1,4 @@
-// `const url="https://jsonplaceholder.typicode.com/posts"
+let url="https://jsonplaceholder.typicode.com/posts"
 
 
 $(document).ready(function () {
@@ -9,7 +9,8 @@ $('#rand').click(function () {
         // }
         let rand =Math.round(Math.random() * data.length+1);
         localStorage.setItem('pgnumber',rand);
-
+    //   let payal=localStorage.getItem('pgnumber');
+alert(payal);
 
     });
 });
