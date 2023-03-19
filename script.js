@@ -68,3 +68,23 @@ const blog= (arg) => {
     localStorage.setItem('pgnumber', arg);
    // alert(localStorage.getItem('pgnumber'));
 }
+
+// search button
+// const search=()=>{
+//  let ser=$("#search").val();
+//  alert(ser);
+
+
+// }
+$(document).ready(function(){
+    $("#searchForm").submit(function(){
+        let ser=$("#searchinput").val();
+        localStorage.setItem('pgnumber', ser);
+        $(location).attr('href', 'blog.html');
+        // setTimeout(() => {
+        //     $(location).attr('href', 'blog.html');
+        // }, 500)
+        //alert(ser);
+    })
+
+});
